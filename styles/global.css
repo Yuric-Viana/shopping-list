@@ -20,3 +20,15 @@
     --text-sm: 500 1rem/.75rem var(--font-family);
     --link: 500 .875rem/1 var(--font-family);
 }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header div {
+    width: max-content;
+    margin-inline: auto;
+    margin-top: 1.6rem;
+}

@@ -1,3 +1,9 @@
+.container {
+    --max-width: 24.375rem;
+    width: calc(100% - 4rem);
+    margin-inline: auto;
+}
+
 .gap-0\.7 {
     gap: .75rem;
 }
@@ -8,4 +14,18 @@
 
 .grid {
     display: grid;
+}
+
+.desktop-only {
+    display: none;
+}
+
+@media (width >= 80rem) {
+    .desktop-only {
+        display: block;
+    }
+
+    .container {
+        width: 100%;
+    }
 }

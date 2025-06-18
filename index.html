@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de compras</title>
     <link rel="stylesheet" href="styles/index.css">
 </head>
+
 <body>
-    
+    <header>
+        <div class="desktop-only">
+            <img src="assets/logo.svg" alt="">
+        </div>
+    </header>
+
+    <main>
+        <div class="grid container gap-1">
+            <p>Voltar</p>
+            <h1>Compras a semana</h1>
+        </div>
+
+        <form class="grid gap-1 container">
+            <input type="text" name="item" id="item" placeholder="Adicione um novo item" required>
+            <button type="submit">Adicionar item</button>
+
+            <ul role="list" class="grid gap-1">
+                <li>
+                    <div>
+                        <div class="checkbox-img"></div>
+                        <input type="checkbox" name="check" id="check">
+                        <label for="check">Pão de forma</label>
+                    </div>
+                    <img class="trash" src="assets/icon-trash.svg" alt="">
+                </li>
+            </ul>
+        </form>
+
+        <div class="container show-remover">
+            <span>
+                <img src="assets/icon-alert-white.svg" alt="">
+                O item foi removido da lista
+            </span>
+            <img src="assets/delete-small.svg" alt="">
+        </div>
+    </main>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
