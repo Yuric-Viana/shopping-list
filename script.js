@@ -8,16 +8,14 @@ function createItemList() {
 
     const checkboxWrapper = document.createElement('div')
 
-    const checkImg = document.createElement('img')
+    const checkImg = document.createElement('div')
     checkImg.classList.add('checkbox-img')
     
     const checkbox = document.createElement('input')
     checkbox.type = 'checkbox'
     checkbox.name = 'check'
-    checkbox.id = 'check'
 
     const nameItem = document.createElement('label')
-    nameItem.setAttribute('for', 'check')
     nameItem.textContent = input.value
 
     const trashImg = document.createElement('img')
