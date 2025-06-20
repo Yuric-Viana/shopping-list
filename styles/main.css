@@ -78,13 +78,13 @@ main {
                     cursor: pointer;
                     margin-left: -1rem;
                 }
-                
+
                 & .checkbox-img {
                     --bg-img: url(../assets/checkbox.svg);
                     background: var(--bg-img) no-repeat;
                     width: 1.5rem;
                 }
-                
+
                 &:hover {
                     & .checkbox-img {
                         --bg-img: url(../assets/checkbox-hover.svg);
@@ -98,14 +98,14 @@ main {
                 }
 
             }
-
-            & .trash {
-                cursor: pointer;
-            }
         }
     }
 
-    & .show-remover {
+    .trash {
+        cursor: pointer;
+    }
+
+    & .show-remove {
         background-color: var(--color-danger);
         display: none;
         align-items: center;
@@ -120,6 +120,14 @@ main {
             font: var(--text-sm);
             align-items: center;
         }
+    }
+
+    .none {
+        display: none;
+    }
+
+    .show-remove.active {
+        display: flex;
     }
 
     @media (width >=80rem) {
